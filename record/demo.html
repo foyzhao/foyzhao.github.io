@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./file/jquery-2.1.1.js"></script>
+<script src="./file/recorder.js"></script>
+<script src="./file/Fr.voice.js"></script>
+<script src="./file/record.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Voice With HTML5</title>
+<style>.button{display:inline-block;vertical-align:middle;margin:0 5px;padding:5px 12px;cursor:pointer;outline:none;font-size:13px;text-decoration:none!important;text-align:center;color:#fff;background-color:#4D90FE;background-image:linear-gradient(top,#4D90FE,#4787ED);background-image:-ms-linear-gradient(top,#4D90FE,#4787ED);background-image:-o-linear-gradient(top,#4D90FE,#4787ED);background-image:linear-gradient(top,#4D90FE,#4787ED);border:1px solid #4787ED;box-shadow:0 1px 3px #BFBFBF}a.button{color:#fff}.button:hover{box-shadow:inset 0 1px 1px #8C8C8C}.button.disabled{box-shadow:none;opacity:0.7}canvas{display:block}</style>
+</head>
+<body>
+<div class="container" id="content">
+<p></p>
+<h2>NOTE</h2>
+<p>Since Chrome version 47, Voice Recording works only on HTTPS sites.</p>
+<p></p>
+<h2>Record</h2>
+<audio controls="" id="audio"></audio><div>
+<a class="button recordButton" id="record">Record</a>
+<a class="button recordButton" id="recordFor5">Record For 5 Seconds</a>
+<a class="button disabled one" id="pause">Pause</a>
+<a class="button disabled one" id="stop">Reset</a></div><br><div>
+<input class="button" type="checkbox" id="live">
+<label for="live">Live Output</label></div><div data-type="wav"><p>WAV Controls:</p>
+<a class="button disabled one" id="play">Play</a>
+<a class="button disabled one" id="download">Download</a>
+<a class="button disabled one" id="base64">Base64 URL</a>
+<a class="button disabled one" id="save">Upload to Server</a></div><div data-type="mp3"><p>MP3 Controls:</p>
+<a class="button disabled one" id="play">Play</a>
+<a class="button disabled one" id="download">Download</a>
+<a class="button disabled one" id="base64">Base64 URL</a>
+<a class="button disabled one" id="save">Upload to Server</a></div>
+</div>
+</body>
+</html>
